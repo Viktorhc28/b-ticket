@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .content {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 40px;
+            border-radius: 30px;
+        }
+
+        .button {
+            border-radius: 20px;
+            padding: 12px 40px;
+            background-color: #312DAC;
+            border: 0px;
+            color: white !important;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .logo {
+            height: 40px;
+            margin: 20px 0px;
+        }
+
+        .disclaimer {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Restablecer Contraseña</h1>
+        <img class="logo" src="https://kuvemar.com/wp-content/uploads/2021/05/logo-pagina.png">
+        <h2>Estimado/a {{nombre}}:</h2>
+        <p>Hemos recibido una solicitud para restablecer la contraseña de su cuenta de <b>{{nombreSistema}}</b>.
+
+        <p> Si deseas recuperar tu contraseña, pulse el siguiente botón: </p><br>
+        <a class="button" href="{{enlace}}">
+            <b>Click aquí para actualizar contraseña </b>
+        </a>
+
+        <br><br>
+        <p>También puede hacerlo copiando el siguiente enlace en su navegador:<br><br>
+            <a href="{{enlace}}">{{enlace}}</a>
+        </p>
+        <br>
+        <p>Una vez que haya creado una nueva contraseña, podrá acceder a su cuenta inmediatamente y con normalidad.</p>
+
+        <p><b>Después de 10 minutos, el enlace de restablecimiento de contraseña expirará y tendrá que solicitar uno nuevo.</b>
+        </p>
+
+        <p>Si usted no ha solicitado esta acción, por favor ignore este mensaje y su contraseña no sufrirá cambios.</p>
+        <br>
+        <p>Atentamente</p>
+        <p>El Equipo de <b>Kuvemar</b></p>
+        <br>
+        <p class="disclaimer">Si usted no ha realizado esta acción, por favor ignore este mensaje o póngase en contacto con <b><a
+                    href="mailto:soporte@kuvemar.com">soporte@kuvemar.com</a></b>.</p>
+    </div>
+</body>
+
+</html>

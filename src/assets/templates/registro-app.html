@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .content {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 40px;
+            border-radius: 30px;
+        }
+
+        .button-container {
+            gap: 20px;
+        }
+
+        .button {
+            border-radius: 20px;
+            padding: 12px 40px;
+            background-color: #312DAC;
+            border: 0px;
+            color: white !important;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        .logo {
+            height: 50px;
+            margin: 20px 0px;
+        }
+
+        .disclaimer {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Registro en Aplicación {{nombreSistema}}</h1>
+        <img class="logo" src="https://sistema.lubrikuv.com/assets/system/logo_sidebar.png">
+        <h2>Estimado/a {{nombre}}:</h2>
+
+        <p>Se ha creado correctamente su cuenta a la aplicación <b>{{nombreSistema}}</b>.
+        <p>Las credenciales de primer acceso a la aplicación son las siguientes:</p>
+        <h4>Correo Electrónico: <b>{{email}}</b></h4>
+        <h4>Contraseña Inicial: <b>{{pwd}}</b></h4>
+        <p>Ingrese con esas credenciales en la aplicación de <b>{{nombreSistema}}</b> y continúe con los pasos iniciales
+            para configurar su cuenta.</p>
+
+        <p>Para instalar la App puede hacerlo mediante las siguientes opciones:</p><br>
+        <div class="button-container">
+            <a class="button" href="{{enlaceAndroid}}">
+                <b>Descargar desde Google Play</b>
+            </a>
+            <a class="button" href="{{enlaceIOS}}">
+                <b>Descargar desde App Store</b>
+            </a>
+        </div>
+        <br><br>
+        <p>Atentamente</p>
+        <p>El Equipo de <b>{{nombreSistema}}</b>.</p>
+        <br>
+        <p class="disclaimer">Si usted no ha realizado esta acción, por favor ignore este mensaje o póngase en contacto con <b><a
+            href="mailto:soporte@kuvemar.com">soporte@kuvemar.com</a></b>.</p>
+    </div>
+</body>
+
+</html>

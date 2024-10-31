@@ -1,0 +1,43 @@
+{
+  "name": "kuv-b-base",
+  "version": "1.0.0",
+  "description": "Proyecto base de backend node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/cli": "^2.21.2",
+    "@sentry/node": "^7.75.1",
+    "@sentry/profiling-node": "^1.2.1",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.0",
+    "node-cron": "3.0.0",
+    "nodemailer": "^6.6.3",
+    "onesignal-node": "^3.4.0",
+    "password-hash": "^1.2.2",
+    "pdfmake": "^0.2.7",
+    "pem": "^1.14.6",
+    "request": "^2.88.2",
+    "sequelize": "^6.6.5",
+    "socket.io": "^4.6.0",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "nodemon": "^2.0.12",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}

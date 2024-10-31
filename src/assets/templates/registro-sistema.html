@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .content {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 40px;
+            border-radius: 30px;
+        }
+
+        .button {
+            border-radius: 20px;
+            padding: 12px 40px;
+            background-color: #312DAC;
+            border: 0px;
+            color: white !important;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .logo {
+            height: 40px;
+            margin: 20px 0px;
+        }
+
+        .disclaimer {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Bienvenido a {{nombreSistema}}</h1>
+        <img class="logo" src="https://kuvemar.com/wp-content/uploads/2021/05/logo-pagina.png">
+        <h2>Estimado/a {{nombre}}:</h2>
+        </p>Hemos creado su cuenta en nuestro portal <b><a href="https://urlsistema.cl">https://urlsistema.cl</a></b>
+        para que
+        tenga acceso a su información.</p>
+        <p>Sus credenciales de acceso al sistema <b>{{nombreSistema}}</b> son las siguientes:</p>
+        <h4>Correo Electrónico: <b>{{email}}</b></h4>
+        <h4>Contraseña Inicial: <b>{{pwd}}</b></h4>
+        <p>Una vez dentro, podrá cambiar su contraseña en cualquier momento.</p>
+        <br>
+        <div class="button-container">
+            <a class="button" href="https://kpagos.cl">
+                <b>Visitar Sistema Web</b>
+            </a>
+        </div>
+        <br>
+        <p>Atentamente</p>
+        <p>El Equipo de <b>Kuvemar</b>.</p>
+        <br>
+        <p class="disclaimer">Si usted no ha realizado esta acción, póngase en contacto con <b><a
+                    href="mailto:soporte@kuvemar.com">soporte@kuvemar.com</a></b>.</p>
+
+    </div>
+</body>
+
+</html>
