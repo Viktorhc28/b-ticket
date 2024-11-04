@@ -10,18 +10,18 @@ controlador.index = async (req, res) => {
     try {
         const autobuses = await Autobus.findAll({
             attributes: [
-              'placa','modelo','ano_fabricacion', // Incluye todas las columnas de Autobus
-              [fn('COUNT', col('asientos.row_label')), 'asientoCount'] // Contar `row_label` en `asientos`
+                'id', 'placa', 'modelo', 'ano_fabricacion', // Incluye todas las columnas de Autobus
+                [fn('COUNT', col('asientos.row_label')), 'asientoCount'] // Contar `row_label` en `asientos`
             ],
             include: [
-              {
-                model: Asientos,
-                as: 'asientos',
-                attributes: []
-              }
+                {
+                    model: Asientos,
+                    as: 'asientos',
+                    attributes: []
+                }
             ],
             group: ['Autobus.id'] // Agrupar por `Autobus.id` para que el conteo funcione correctamente
-          });
+        });
         return res.json(autobuses);
     } catch (error) {
         console.error(error);
@@ -60,9 +60,11 @@ controlador.update = async (req, res) => {
     try {
         const id = req.params.id;
         const { autobus } = req.body;
-
-
+        console.log({ id });
+        console.log({ autobus });
         const result = await Autobus.update(autobus, { where: { id } });
+        console.log({result});
+        
         return res.status(200).json({ response: "Autobús actualizado con éxito" });
 
     } catch (error) {

@@ -23,6 +23,19 @@ controlador.select = async (req, res) => {
         return res.status(500).json({ err: error, response: "Fallo del servidor" });
     }
 };
+controlador.estado = async (req, res) => {
+    try {
+
+        const ciudad = await Ciudad.findOne({ where: { id: req.params.id } });
+
+        ciudad.estado = ciudad.estado === 1 ? 0 : 1;
+
+        return res.json({ response: "Estado Actualizado" });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ err: error, response: "Fallo del servidor" });
+    }
+};
 
 // Crear una nueva ciudad
 controlador.create = async (req, res) => {
